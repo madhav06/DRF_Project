@@ -59,7 +59,7 @@ class BankDetails(models.Model):
     bank_acc = models.IntegerField(max_length=100, null=True)
     bank_name = models.CharField(max_length=100, null=True)
 
-# class Tag(models.Model):
+
 
 
 

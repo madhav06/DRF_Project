@@ -9,7 +9,11 @@ def home(request):
     managers = Manager.objects.all()
     staffs = Staff.objects.all()
 
-    return render(request, 'accounts/dashboard.html', {'managers': managers, 'staffs': staffs })
+    total_staffs = staffs.count()
+    working_staffs = staffs.filter(status='IsActive').count()
+    removed_staffs = staffs.filter(status='IsNotActive').count()
+
+    return render(request, 'accounts/dashboard.html', {'managers': managers, 'staffs': staffs,  'total_staffs': total_staffs, 'working_staffs': working_staffs, 'removed_staffs': removed_staffs })
 
 def login(request):
     return render(request, 'accounts/login.html')
