@@ -13,7 +13,7 @@ REST-API in Python and Django
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0008.jpg)
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0009.jpg)
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0010.jpg)
-![GitHub Logo]
-![GitHub Logo]
-![GitHub Logo]
+![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0011.jpg)
+![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0012.jpg)
+![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0013.jpg)
 ![GitHub Logo]
