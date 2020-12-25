@@ -1,0 +1,68 @@
+{% extends 'accounts/main.html'%}
+
+{% block content %}
+{% include 'accounts/status.html' %}
+
+<!-- <p> BASIC DASHBOARD</p> -->
+
+<br>
+<div class="row">
+    <div class="col-md-5">
+        <h5> Manager Modify Staffs: </h5>
+        <hr>
+        <div class="card card-body">
+            <a class="btn btn-primary btn-sm btn-block" href="">Create/Add Manager </a>
+            <table class="table table-sm">
+                <tr>
+                    <th> </th>
+                    <th>Manager</th>
+                    <th>Aadhar Number</th>
+                </tr>
+
+                {% for j in managers %}
+				    <tr> 
+						<td>{{j.full_name}}</td>
+						<td>{{j.aadhar_number}}</td>
+						
+						<!-- <td>{{i.staff_name}}</td> -->
+						<!-- <td>{{i.staff_name}}</td> -->
+					</tr>
+				{% endfor %}
+
+
+            </table>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <h5>Current Working Staffs </h5>
+        <hr>
+        <div class="card card-body">
+            <a class="btn btn-primary btn-sm btn-block" href="">Create/Add Staff</a>
+            <table class="table table-sm">
+                <tr>
+                    <th>Staff Name</th>
+                    <th>Date Joined</th>
+                    <th>Status</th>
+                    <th>Update</th>
+                    <th>Remove</th>
+                </tr>
+                {% for k in staffs %}
+				    <tr> 
+						<td>{{k.staff_name}}</td>
+                        <td>{{k.date_joined}}</td>
+                        <td>{{k.status}}</td>
+						<!-- <td>{{k.date_joined}}</td> -->
+						
+					</tr>
+				{% endfor %}
+
+
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+    

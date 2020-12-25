@@ -1,0 +1,45 @@
+
+{%  extends 'accounts/main.html' %}
+
+{% block content %}
+
+		<br>
+
+		<div class="row">
+			<div class="col-md">
+				<div class="card card-body">
+					<h5>Manager</h5>
+				</div>
+				<div class="card card-body">
+					<table class="table">
+						<tr>
+							<th>Aadhar Number(ID)</th>
+							<th>Manager name </th>
+							<th>Date Of Birth </th>
+							<th>Blood Group</th>
+							<th>Manager Email </th>
+							<th>Manager Contact </th>
+							<th>Company Name </th>
+							
+							
+						</tr>
+
+						{% for m in managers %} 
+						    <tr> 
+								<td>{{m.aadhar_number}}</td>
+								<td>{{m.full_name}}</td>
+								<td>{{m.date_of_birth}}</td>
+								<td>{{m.blood_group}}</td>
+								<td>{{m.email}}</td>
+								<td>{{m.contact}}</td>
+							</tr>
+						{% endfor %}
+
+						
+					</table>
+				</div>
+			</div>
+			
+		</div>
+
+{% endblock content %}
