@@ -8,6 +8,7 @@ from .models import *
 def home(request):
     managers = Manager.objects.all()
     staffs = Staff.objects.all()
+    # utils = utility.objects.all()
 
     total_staffs = staffs.count()
     working_staffs = staffs.filter(status='IsActive').count()
@@ -26,9 +27,14 @@ def manager(request):
     return render(request, 'accounts/manager.html', {'managers': managers})
 
 def staff(request):
+    # staffs = Staff.objects.get(id=pk_test)
     staffs = Staff.objects.all()
 
-    return render(request, 'accounts/staff.html', {'staffs': staffs})
+    # utils = staffs.category_set.all()
+
+    context = {'staffs': staffs, }
+
+    return render(request, 'accounts/staff.html', context)
 
 
 def utility(request):

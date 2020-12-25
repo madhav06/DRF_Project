@@ -14,17 +14,17 @@
             <a class="btn btn-primary btn-sm btn-block" href="">Create/Add Manager </a>
             <table class="table table-sm">
                 <tr>
+                    <!-- <th></th> -->
                     <th>Manager</th>
                     <th>Aadhar Number</th>
                 </tr>
 
-                {% for j in managers %}
+                {% for manager in managers %}
 				    <tr> 
-						<td>{{j.full_name}}</td>
-						<td>{{j.aadhar_number}}</td>
+                        
+                        <td>{{manager.full_name}}</td>
+						<td>{{manager.aadhar_number}}</td>
 						
-						<!-- <td>{{i.staff_name}}</td> -->
-						<!-- <td>{{i.staff_name}}</td> -->
 					</tr>
 				{% endfor %}
 
