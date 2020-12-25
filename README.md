@@ -16,5 +16,6 @@
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0011.jpg)
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0012.jpg)
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0013.jpg)
+![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0014.jpg)
 
 # {{%...Updating soon.%}}
