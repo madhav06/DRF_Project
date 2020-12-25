@@ -1,7 +1,7 @@
-# python-rest-api
-REST-API in Python and Django
+# DRF_PROJECT 
 
-## Full documentation, Making Rest-API in python3 using MYSQL as database and Django as framework.
+
+## Full documentation, Making DRF PROJECT in python3 using MASKED REACT_CARDS, DRFamework, SQLITE as database and Django as framework.
 
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0001.jpg)
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0002.jpg)
@@ -16,4 +16,5 @@ REST-API in Python and Django
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0011.jpg)
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0012.jpg)
 ![GitHub Logo](https://github.com/madhav06/DRF_Project/blob/master/imagos/page-0013.jpg)
-![GitHub Logo]
+
+# {{%...Updating soon.%}}
