@@ -1,6 +1,7 @@
-{% extends 'accounts/main.html' %}
-
-{% block content %}
-    <p> SignUp Page</p>
-
-{% endblock %}
+<h3>SignUp </h3>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_P}}
+    
+    <input type="submit" name="Create New Account">
+</form>

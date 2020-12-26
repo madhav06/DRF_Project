@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
-from .forms import StaffForm
+from .forms import StaffForm, CreateUserForm
+from django.contrib.auth.forms import UserCreationForm
 
 
 # Create your views here.
@@ -18,10 +19,19 @@ def home(request):
     return render(request, 'accounts/dashboard.html', {'managers': managers, 'staffs': staffs,  'total_staffs': total_staffs, 'working_staffs': working_staffs, 'removed_staffs': removed_staffs })
 
 def login(request):
-    return render(request, 'accounts/login.html')
+    context = {}
+    return render(request, 'accounts/login.html', context)
 
 def signup(request):
-    return render(request, 'accounts/signup.html')
+    form = CreateUserForm()
+
+    if request.method == 'POST':
+        form = CreateUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+    context = {'form': form}
+    return render(request, 'accounts/signup.html', context)
 
 def manager(request):
     managers = Manager.objects.all()
