@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import *
+from .forms import StaffForm
 
 
 # Create your views here.
@@ -39,3 +40,15 @@ def staff(request):
 
 def utility(request):
     return render(request, 'accounts/utility.html')
+
+
+def addStaff(request):
+    form = StaffForm()
+    if request.method == 'POST':
+        form = StaffForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+
+    context = {'form': form}
+    return render(request, 'accounts/staff_form.html')

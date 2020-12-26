@@ -8,5 +8,7 @@ urlpatterns = [
      path('signup/', views.signup, name="signup"),
      path('manager/', views.manager, name="manager"),
      path('staff/', views.staff, name="staff"),
-     path('utility/', views.utility, name="utility")
+     path('utility/', views.utility, name="utility"),
+     path('add_staff/', views.addStaff, name="add_staff")
+
 ]
